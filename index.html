@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>胸部レントゲン（胸部X光）语音指南</title>
+<title>胸部・腹部レントゲン（胸部・腹部X光检查）语音指南</title>
 <style>
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Segoe UI",sans-serif;
 background:linear-gradient(180deg,#f7fbff,#eef6ff);color:#0f172a;}
@@ -69,7 +69,7 @@ const STEPS = [
  {preview:"こちらをご覧ください。これはあな…", jp:"こちらをご覧ください。これはあなたのお名前と生年月日で合っていますか？", en:"请看一下，这是不是您的姓名和出生日期？  (Qǐng kàn yíxià, zhè shì bú shì nín de xìngmíng hé chūshēng rìqī ma?)"},
  {preview:"お名前と生年月日を教えていただけ…", jp:"お名前と生年月日を教えていただけますか？", en:"可以请您说一下您的姓名和出生日期吗？  (Kěyǐ qǐng nín shuō yíxià nín de xìngmíng hé chūshēng rìqī ma?)"},
  {preview:"どうぞお入りください。", jp:"どうぞお入りください。", en:"请进。  (Qǐng jìn.)"},
- {preview:"これから胸部レントゲンを撮影しま…", jp:"これから胸部レントゲンを撮影します。", en:"现在要给您拍胸部X光。  (Xiànzài yào gěi nín pāi xiōngbù X-guāng.)"},
+ {preview:"これから胸部と腹部レントゲンを撮影…", jp:"これから胸部と腹部のレントゲンを撮影します。", en:"现在要给您拍胸部和腹部X光。 (Xiànzài yào gěi nín pāi xiōngbù hé fùbù X-guāng.)"},
  {preview:"身につけている金属類を外してくだ…", jp:"身につけている金属類を外してください。", en:"请把身上的金属物品取下来。  (Qǐng bǎ shēnshang de jīnshǔ wùpǐn qǔ xiàlái.)"},
  {preview:"ワイヤー入りや金属のついた下着は検査に影響しま…", jp:"ワイヤー入りや金属のついた下着は検査に影響します。検査着は更衣室にありますので、更衣室で着替えてください。", en:"如果您穿的是带钢圈或带有金属的内衣，会影响检查。检查服在更衣室里，请到更衣室更换。  (Rúguǒ nín chuān de shì dài gāngquān huò dài yǒu jīnshǔ de nèiyī, huì yǐngxiǎng jiǎnchá. Jiǎnchá fú zài gēngyīshì lǐ, qǐng dào gēngyīshì gēnghuàn.)"},
  {preview:"ここに立って、胸をこのパネルにつ…", jp:"ここに立って、胸をこのパネルにつけてください。", en:"请站在这里，把胸口贴在这块板上。  (Qǐng zhàn zài zhèlǐ, bǎ xiōngkǒu tiē zài zhè kuài bǎn shàng.)"},
@@ -78,12 +78,12 @@ const STEPS = [
  {preview:"動かないでください。", jp:"動かないでください。", en:"请不要动。  (Qǐng búyào dòng.)"},
  {preview:"大きく息を吸って、止めてください…", jp:"大きく息を吸って、止めてください。", en:"深吸一口气，屏住呼吸。  (Shēn xī yì kǒu qì, píng zhù hūxī.)"},
  {preview:"はい、呼吸していいですよ。", jp:"はい、呼吸していいですよ。", en:"好了，可以呼吸了。  (Hǎo le, kěyǐ hūxī le.)"},
- {preview:"続いて腹部レントゲンを撮影します…", jp:"続いて腹部レントゲンを撮影します。", en:"接下来拍腹部X光。 (Jiēxiàlái pāi fùbù X-guāng.)"},
- {preview:"今の姿勢のままで向きを変えないで…", jp:"今の姿勢のままで、向きを変えないでください。", en:"请保持现在的姿势，不要转身。 (Qǐng bǎochí xiànzài de zīshì, búyào zhuǎnshēn.)"},
- {preview:"位置を確認します。腰に触れます。", jp:"位置を確認しますので、腰のあたりに少し触れます。", en:"我要确认一下位置，会轻轻碰一下您的腰部。 (Wǒ yào quèrèn yíxià wèizhì, huì qīngqīng pèng yíxià nín de yāobù.)"},
- {preview:"動かないでください。", jp:"動かないでください。", en:"请不要动。 (Qǐng búyào dòng.)"},
- {preview:"息を吸って吐いて止めてください…", jp:"息を吸って、吐いて止めてください。", en:"吸气，吐气后屏住呼吸。 (Xī qì, tǔ qì hòu píngzhù hūxī.)"},
- {preview:"呼吸して大丈夫です。", jp:"呼吸して大丈夫です。", en:"好了，可以呼吸了。 (Hǎo le, kěyǐ hūxī le.)"},
+ {preview:"横を向いてください。", jp:"横を向いてください。", en:"请转向侧面。  (Qǐng zhuǎn xiàng cèmiàn.)"},
+ {preview:"両手を頭の上にあげてください。", jp:"両手を頭の上にあげてください。", en:"请把双手举到头上。  (Qǐng bǎ shuāngshǒu jǔ dào tóu shàng.)"},
+ {preview:"動かないでください。", jp:"動かないでください。", en:"请不要动。  (Qǐng búyào dòng.)"},
+ {preview:"息を吸って止めてください。", jp:"息を吸って止めてください。", en:"深吸一口气，屏住呼吸。  (Shēn xī yì kǒu qì, píng zhù hūxī.)"},
+ {preview:"呼吸して大丈夫です。", jp:"呼吸して大丈夫です。", en:"可以呼吸了。  (Kěyǐ hūxī le.)"},
+ {preview:"楽にしてください。", jp:"楽にしてください。", en:"请放松。  (Qǐng fàngsōng.)"},
  {preview:"検査は終わりました。", jp:"検査は終わりました。", en:"检查结束了。  (Jiǎnchá jiéshù le.)"},
  {preview:"次は診察がありますので、10番へ…", jp:"次は診察がありますので、10番へ行ってこのファイルを提出してください。", en:"接下来要看医生，请您到10号，把这个文件交给工作人员。  (Jiēxiàlái yào kàn yīshēng, qǐng nín dào shí hào, bǎ zhège wénjiàn jiāo gěi gōngzuòrényuán.)"},
  {preview:"19番または20番の前でお待ちくださ…", jp:"19番または20番の検査室の前でお待ちください。", en:"请在19号或20号检查室前等候。 (Qǐng zài shíjiǔ hào huò èrshí hào jiǎncháshì qián děnghòu.)"},
