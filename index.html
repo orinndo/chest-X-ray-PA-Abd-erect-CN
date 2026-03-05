@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>胸部・腹部レントゲン（胸部・腹部X光检查）语音指南</title>
+<title>胸部・腹部立位正面（胸部・腹部X光检查）语音指南</title>
 <style>
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Segoe UI",sans-serif;
 background:linear-gradient(180deg,#f7fbff,#eef6ff);color:#0f172a;}
@@ -29,7 +29,7 @@ audio{width:100%;margin-top:10px;}
 <body>
 <div class="header">
   <div class="frame-title">
-    <h1>胸部・腹部レントゲン（胸部・腹部X光检查）</h1>
+    <h1>胸部・腹部立位正面（胸部・腹部X光检查）</h1>
     <p>中文语音指南</p>
   </div>
 </div>
@@ -68,10 +68,13 @@ const STEPS = [
  {preview:"すみません、少しよろしいですか？", jp:"すみません、少しよろしいですか？", en:"不好意思，可以打扰您一下吗？  (Bù hǎo yìsi, kěyǐ dǎrǎo nín yíxià ma?)"},
  {preview:"こちらをご覧ください。これはあな…", jp:"こちらをご覧ください。これはあなたのお名前と生年月日で合っていますか？", en:"请看一下，这是不是您的姓名和出生日期？  (Qǐng kàn yíxià, zhè shì bú shì nín de xìngmíng hé chūshēng rìqī ma?)"},
  {preview:"お名前と生年月日を教えていただけ…", jp:"お名前と生年月日を教えていただけますか？", en:"可以请您说一下您的姓名和出生日期吗？  (Kěyǐ qǐng nín shuō yíxià nín de xìngmíng hé chūshēng rìqī ma?)"},
+ {preview:"簡単な日本語は理解できますか？", jp:"簡単な日本語は理解できますか？", en:"您能听懂简单的日语吗？ (Nín néng tīng dǒng jiǎndān de Rìyǔ ma?)"},
+ {preview:"中国語の音声ガイドを使用します…", jp:"中国語の音声ガイドで検査を説明します。音声の指示に従ってください。", en:"我们会用中文语音导览说明检查，请按照语音的指示进行。 (Wǒmen huì yòng Zhōngwén yǔyīn dǎolǎn shuōmíng jiǎnchá, qǐng ànzhào yǔyīn de zhǐshì jìnxíng.)"},
+ {preview:"中国語通訳を呼びますのでお待ち…", jp:"中国語を話せる通訳を呼びますので、しばらくお待ちください。", en:"我们会叫会说中文的翻译，请稍等一下。 (Wǒmen huì jiào huì shuō Zhōngwén de fānyì, qǐng shāo děng yíxià.)"},
  {preview:"どうぞお入りください。", jp:"どうぞお入りください。", en:"请进。  (Qǐng jìn.)"},
  {preview:"これから胸部と腹部レントゲンを撮影…", jp:"これから胸部と腹部のレントゲンを撮影します。", en:"现在要给您拍胸部和腹部X光。 (Xiànzài yào gěi nín pāi xiōngbù hé fùbù X-guāng.)"},
- {preview:"身につけている金属類を外してくだ…", jp:"身につけている金属類を外してください。", en:"请把身上的金属物品取下来。  (Qǐng bǎ shēnshang de jīnshǔ wùpǐn qǔ xiàlái.)"},
- {preview:"ワイヤー入りや金属のついた下着は検査に影響しま…", jp:"ワイヤー入りや金属のついた下着は検査に影響します。検査着は更衣室にありますので、更衣室で着替えてください。", en:"如果您穿的是带钢圈或带有金属的内衣，会影响检查。检查服在更衣室里，请到更衣室更换。  (Rúguǒ nín chuān de shì dài gāngquān huò dài yǒu jīnshǔ de nèiyī, huì yǐngxiǎng jiǎnchá. Jiǎnchá fú zài gēngyīshì lǐ, qǐng dào gēngyīshì gēnghuàn.)"},
+ {preview:"金属やプラスチック、湿布などを外…", jp:"身につけている金属やプラスチック製品、湿布などを外してください。", en:"请把身上的金属、塑料制品和贴的膏药取下来。 (Qǐng bǎ shēnshang de jīnshǔ, sùliào zhìpǐn hé tiē de gāoyào qǔ xiàlái.)"},
+ {preview:"更衣室は17番受付の隣にあります…", jp:"更衣室は17番受付の隣にあります。検査着は更衣室にありますので、更衣室で着替えてください。着替え終わったらここに戻ってきてください。", en:"更衣室在17号接待处旁边。检查服在更衣室里，请到更衣室更换。换好以后，请回到这里。 (Gēngyīshì zài shíqī hào jiēdài chù pángbiān. Jiǎnchá fú zài gēngyīshì lǐ, qǐng dào gēngyīshì gēnghuàn. Huàn hǎo yǐhòu, qǐng huí dào zhèlǐ.)"},
  {preview:"ここに立って、胸をこのパネルにつ…", jp:"ここに立って、胸をこのパネルにつけてください。", en:"请站在这里，把胸口贴在这块板上。  (Qǐng zhàn zài zhèlǐ, bǎ xiōngkǒu tiē zài zhè kuài bǎn shàng.)"},
  {preview:"あごをここにのせてください。", jp:"あごをここにのせてください。", en:"请把下巴放在这里。  (Qǐng bǎ xiàba fàng zài zhèlǐ.)"},
  {preview:"両手で機械を抱えるようにしてくだ…", jp:"両手で機械を抱えるようにしてください。", en:"双手抱住机器。  (Shuāngshǒu bàozhù jīqì.)"},
